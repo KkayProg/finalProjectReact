@@ -1,0 +1,39 @@
+.infoAboutMovie {
+    padding: 40px 80px 16px 80px;
+}
+
+.infoAboutMovie__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 64px;
+}
+
+.description__line {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.description__name {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    gap: 4px;
+}
+
+.description__text {
+    display: block;
+}
+
+.description__border {
+    flex-grow: 1;
+    display: block;
+    border-bottom: 1px dashed #ffffff80;
+    transform: translateY(-5px);
+}

@@ -1,0 +1,28 @@
+import { FC, ReactNode } from "react";
+import styles from './AuthModal.module.css';
+
+interface AuthModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    children: ReactNode;
+}
+
+const AuthModal: FC<AuthModalProps> = ({ isOpen, onClose, children }) => {
+    if (!isOpen) return null;
+
+    return (
+        <div className={styles.modalOverlay} onClick={onClose}>
+            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                <button className={styles.CloseButton}>
+                    <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.25" width="48" height="48" rx="24" fill="white" />
+                        <path d="M22.5859 24.25L14.793 16.4571L16.2072 15.0428L24.0001 22.8357L31.793 15.0428L33.2072 16.4571L25.4143 24.25L33.2072 32.0428L31.793 33.4571L24.0001 25.6642L16.2072 33.4571L14.793 32.0428L22.5859 24.25Z" fill="black" />
+                    </svg>
+                </button>
+                {children}
+            </div>
+        </div>
+    )
+}
+
+export default AuthModal;

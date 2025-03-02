@@ -1,0 +1,8 @@
+.raiting {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 16px;
+}
+.raiting svg {
+    margin-right: 4.4px;
+}

@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 42px 80px;
+
+}
+
+.footer__link {
+    transition: transform 0.2s ease-in-out;
+}
+.footer__link:hover {
+    transform:  scale(1.1);
+}

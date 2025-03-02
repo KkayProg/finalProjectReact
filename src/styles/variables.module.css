@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(180deg, #0B192D 0%, #39384A 100%);
+    color: white;
+    font-family: "Play", serif;
+    font-style: normal;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+}

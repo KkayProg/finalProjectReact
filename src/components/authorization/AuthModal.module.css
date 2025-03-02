@@ -1,0 +1,123 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 64px 40px;
+    border-radius: 24px;
+    position: relative;
+    width: 420px;
+}
+
+.CloseButton {
+    position: absolute;
+    top: 0;
+    right: -72px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.authModal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalLogo {
+    margin-bottom: 40px;
+}
+
+.modalLogo svg {
+    width: 23px;
+    height: 30px;
+}
+
+.modalLogo svg:last-child {
+    width: 92px;
+    height: 19px;
+}
+
+.authModalItem {
+    width: 340px;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 0 16px;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    transition: border-color .2s ease-in-out;
+}
+.authModalItem:hover,
+.authModalItem:focus-within {  
+    border-color: #B4A9FF;
+}
+
+.authModalItem:hover svg path,
+.authModalItem:focus-within svg path {
+    fill: #B4A9FF;
+    fill-opacity: 1;
+}
+.authModalItem svg path{
+    transition:  fill .2s ease-in-out, fill-opacity .2s ease-in-out;
+}
+
+.authModalItem:last-of-type {
+    margin-bottom: 24px;
+}
+
+/* здесь нужно будет сделать еще стили для ошибки ввода данных в инпут */
+
+.registrationDesr {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.authModalItem input {
+    max-height: 24px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+}
+
+.authFormBtn {
+    width: 100%;
+    height: 56px;
+    color: white;
+    background-color: #67A5EB;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.switchText {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}

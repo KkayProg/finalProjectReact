@@ -1,0 +1,119 @@
+.random__main {
+    padding: 32px 80px 0 80px;
+    min-height: 554px;
+}
+
+.randomMovie__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.randomMovie__left {
+    padding-right: 32px;
+}
+
+.randomMovie__right img {
+    height: 550px;
+}
+
+.dopInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mainInfo__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+
+.mainInfo__description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    /* здесь нужно потом заменить цвет на константу */
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.randomMovieButtons {
+    display: flex;
+    align-self: center;
+    gap: 16px;
+}
+
+.like {
+    text-align: center;
+    width: 68px;
+    height: 56px;
+    padding: 16px 22px;
+    background-color: #333333;
+    border-radius: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.likeRandomMovie svg {
+    transition: transform .2s ease-in-out;
+}
+.likeRandomMovie:hover svg{
+    transform: scale(1.2)
+}
+
+.newRandomMovie svg {
+    transition: transform .2s ease-in-out;
+}
+.newRandomMovie:hover svg {
+    transform: rotate(180deg);
+}
+
+.trailer {
+    width: 171px;
+    height: 56px;
+    background-color: #67A5EB;
+    border-radius: 28px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.trailer:hover {
+    background-color: white;
+    color: black;
+}
+
+.trailer:disabled {
+    background-color: #45526E;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}
+
+.aboutMovie {
+    width: 183px;
+    height: 56px;
+    background-color: #333333;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.aboutMovie:hover {
+    background-color: white;
+    color: black;
+}
+
+.aboutMovie:disabled {
+    background-color: #747474;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}

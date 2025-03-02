@@ -1,0 +1,40 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    padding: 0 72px;
+    border-radius: 8px;
+    max-width: 960px;
+    max-height: 540px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modal div {
+    width: 100% !important;
+    height: 100% !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #393B3C;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    /* right: -72px; */
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

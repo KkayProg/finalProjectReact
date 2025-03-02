@@ -1,0 +1,17 @@
+.topMovies__title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.topMovies {
+    padding: 40px 80px 120px 80px;
+}
+
+.topMovies__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 40px;
+}
